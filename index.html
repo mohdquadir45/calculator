@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="container" class="shadow p-3 m-5 bg-white rounded">
+        <div id="out-holder" class="shadow-sm p-3 mb-5 bg-white rounded">
+            <input id="result" type="text" value="Result" disabled placeholder="Result" >
+            <button id="clear"  onclick="clr()">C</button>
+        </div>
+        <div class="num-button">
+            <button id="num7" class="buttons" value="7" onclick="add(this.value)">7</button>
+            <button id="num8" class="buttons" value="8" onclick="add(this.value)">8</button>
+            <button class="buttons" id="num9" value="9" onclick="add(this.value)">9</button>
+            <button class="buttons" id="divi" value="/" onclick="add(this.value)">/</button>
+        </div>
+        <div class="num-button">
+            <button class="buttons" id="num4" value="4" onclick="add(this.value)">4</button>
+            <button class="buttons" id="num5" value="5" onclick="add(this.value)">5</button>
+            <button class="buttons" id="num6" value="6" onclick="add(this.value)">6</button>
+            <button class="buttons" id="mul" value="*" onclick="add(this.value)">x</button>
+        </div>
+        <div class="num-button">
+            <button class="buttons" id="num1" value="1" onclick="add(this.value)">1</button>
+            <button class="buttons" id="num2" value="2" onclick="add(this.value)">2</button>
+            <button class="buttons" id="num3" value="3" onclick="add(this.value)">3</button>
+            <button class="buttons" id="minus"value="-" onclick="add(this.value)">-</button>
+        </div>
+        <div class="num-button">
+            <button class="buttons" id="num0" value="0" onclick="add(this.value)">0</button>
+            <button class="buttons" id="dot" value="." onclick="add(this.value)">.</button>
+            <button class="buttons" id="ans" value="=" onclick="ans()">=</button>
+            <button class="buttons" id="add" value="+" onclick="add(this.value)">+</button>
+        </div>
+    </div> 
+    
+    <script src="index.js"></script>
+
+</body>
+</html>
